@@ -9,6 +9,4 @@ pip3 install -U -I --no-deps https://github.com/C43H66N12O12S2/stable-diffusion-
 pip3 install triton==2.0.0.dev20221202
 pip3 install --upgrade lion-pytorch
 
-accelerate config
-
 echo "Install completed"
