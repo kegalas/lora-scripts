@@ -1,7 +1,7 @@
 # LoRA train script by @Akegarasu
 
 # Train data path | 设置训练用模型、图片
-pretrained_model="./sd-models/model.ckpt" # base model path | 底模路径
+pretrained_model="./sd-models/model.safetensors" # base model path | 底模路径
 train_data_dir="./train/qinhong" # train dataset path | 训练数据集路径
 
 # Train related params | 训练相关参数
