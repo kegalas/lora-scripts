@@ -2,12 +2,12 @@
 
 # Train data path | 设置训练用模型、图片
 pretrained_model="./sd-models/model.ckpt" # base model path | 底模路径
-train_data_dir="./train/aki" # train dataset path | 训练数据集路径
+train_data_dir="./train/qinhong" # train dataset path | 训练数据集路径
 
 # Train related params | 训练相关参数
-resolution="512,512" # image resolution w,h. 图片分辨率，宽,高。支持非正方形，但必须是 64 倍数。
+resolution="512,768" # image resolution w,h. 图片分辨率，宽,高。支持非正方形，但必须是 64 倍数。
 batch_size=1 # batch size
-max_train_epoches=10 # max train epoches | 最大训练 epoch
+max_train_epoches=20 # max train epoches | 最大训练 epoch
 save_every_n_epochs=2 # save every n epochs | 每 N 个 epoch 保存一次
 network_dim=32 # network dim | 常用 4~128，不是越大越好
 network_alpha=32 # network alpha | 常用与 network_dim 相同的值或者采用较小的值，如 network_dim的一半 防止下溢。默认值为 1，使用较小的 alpha 需要提升学习率。
@@ -23,7 +23,7 @@ lr_scheduler="cosine_with_restarts" # "linear", "cosine", "cosine_with_restarts"
 lr_warmup_steps=0 # warmup steps | 仅在 lr_scheduler 为 constant_with_warmup 时需要填写这个值
 
 # Output settings | 输出设置
-output_name="aki" # output model name | 模型保存名称
+output_name="qinhong" # output model name | 模型保存名称
 save_model_as="safetensors" # model save ext | 模型保存格式 ckpt, pt, safetensors
 
 # 其他设置
